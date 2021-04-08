@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Функции</title>
+		<link rel="stylesheet "href="style.css">
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="text">
+				<form method="get" name="strings">
+					<p>Введите несколько строк через пробелы, чтобы найти самую длинную строку</p>
+					<input type="text" name="string1" id="string1" placeholder="Строки">
+					<button name="button1" value="Найти" onclick="maxString(); return false">Найти</button>
+					<div id="res1" class="res1" style="display:none"></div>
+				</form>	
+
+				<form method="get" name="symbol">
+					<p>Введите строку, чтобы найти в ней наиболее часто повторяющийся символ</p>
+					<input type="text" name="string2" id="string2" placeholder="Строка">
+					<button name="button2" value="Найти" onclick="outputSymbol(); return false">Найти</button>
+					<div id="res2" class="res2" style="display:none"></div>
+					<div id="change" class="change" style="display: none;">
+						<p>Введите символ, на который хотите заменить наиболее часто встречающийся в строке выше</p>
+						<input type="text" name="string3" id="string3" placeholder="Символ для замены">
+						<button name="button3" value="Заменить" onclick="changeSymbol(); return false">Заменить</button>
+						<div id="res3" class="res3" style="display:none"></div>	
+					</div>
+				</form>	
+
+				<form method="get" name="anagram">
+					<p>Введите две строки, чтобы узнать, являются ли они анаграммами</p>
+					<input type="text" name="string4" id="string4" placeholder="Первая строка"> <input type="text" name="string5" id="string5" placeholder="Вторая строка">
+					<button name="button4" value="Проверить" onclick="isAnagram(); return false">Проверить</button>
+					<div id="res4" class="res4" style="display:none"></div>
+				</form>	
+			</div>
+		</div>
+	</body>
+</html>
